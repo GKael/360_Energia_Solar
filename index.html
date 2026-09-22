@@ -50,14 +50,14 @@
         }
     </style>
 </head>
-<body class="font-sans antialiased text-gray-900 selection:bg-accent selection:text-white">
+<body class="font-sans antialiased text-gray-900 selection:bg-accent selection:text-white overflow-x-hidden">
 
     <!-- Floating Nav -->
-    <nav class="fixed w-full z-50 top-6 px-4 pointer-events-none">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <nav class="fixed w-full z-50 top-4 md:top-6 px-4 pointer-events-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
             <!-- Pill Left -->
-            <div class="glass-pill pointer-events-auto px-6 py-2 rounded-full flex items-center gap-8 shadow-sm" data-aos="fade-down" data-aos-duration="1000">
-                <a href="#" class="flex items-center"><img src="logo.png" alt="360 Energia Solar" class="h-10 object-contain"></a>
+            <div class="glass-pill pointer-events-auto px-4 py-2 md:px-6 md:py-2 rounded-full flex items-center gap-4 md:gap-8 shadow-sm" data-aos="fade-down" data-aos-duration="1000">
+                <a href="#" class="flex items-center"><img src="logo.png" alt="360 Energia Solar" class="h-8 md:h-10 object-contain"></a>
                 <div class="hidden md:flex gap-6 text-sm font-bold text-gray-800">
                     <a href="#sobre" class="hover:text-accent transition">Sobre</a>
                     <a href="#servicos" class="hover:text-accent transition">Soluções</a>
@@ -66,8 +66,8 @@
                 </div>
             </div>
             <!-- Pill Right -->
-            <a href="https://wa.me/5541987213374" target="_blank" class="pointer-events-auto bg-dark text-white px-7 py-3.5 rounded-full text-sm font-bold hover:bg-accent hover:text-dark transition shadow-lg" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-                Orçamento Rápido
+            <a href="https://wa.me/5541987213374" target="_blank" class="pointer-events-auto bg-dark text-white px-4 py-2.5 md:px-7 md:py-3.5 rounded-full text-xs md:text-sm font-bold hover:bg-accent hover:text-dark transition shadow-lg whitespace-nowrap" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                Orçamento
             </a>
         </div>
     </nav>
@@ -146,8 +146,8 @@
                     </a>
                 </div>
                 <!-- Background Decoration -->
-                <div class="absolute right-0 top-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition duration-1000 ease-in-out">
-                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover object-right">
+                <div class="absolute right-0 top-0 w-full md:w-1/2 h-full opacity-10 md:opacity-20 group-hover:opacity-20 md:group-hover:opacity-40 transition duration-1000 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover object-center md:object-right">
                 </div>
             </div>
 
@@ -308,7 +308,7 @@
     <footer class="border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <a href="#" class="flex items-center"><img src="logo.png" alt="360 Energia Solar" class="h-14 object-contain"></a>
         <p class="text-sm text-gray-500 font-medium text-center md:text-left flex items-center justify-center gap-2">
-            &copy; <script>document.write(new Date().getFullYear())</script> <i class="fas fa-arrow-right text-xs"></i> 360 Energia Solar.<br class="md:hidden"> Todos os direitos reservados.
+            &copy; <span class="hidden md:inline"><script>document.write(new Date().getFullYear())</script> <i class="fas fa-arrow-right text-xs mx-1"></i></span> 360 Energia Solar.<br class="md:hidden"> Todos os direitos reservados.
         </p>
         <div class="flex gap-6">
             <a href="https://wa.me/5541987213374" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-dark hover:text-white hover:border-dark transition"><i class="fab fa-whatsapp text-xl"></i></a>
