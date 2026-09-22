@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Energia Solar | Instalação, Limpeza e Manutenção</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#121212',
+                        cardDark: '#1A1A1A',
+                        accent: '#F5A623', /* Sofisticado tom de laranja/amarelo */
+                        primary: '#1E3A8A', 
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F8F9FA; }
+        .hero-img {
+            background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom pill styling */
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .text-huge {
+            font-size: clamp(4rem, 12vw, 10rem);
+            line-height: 0.9;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 selection:bg-accent selection:text-white">
+
+    <!-- Floating Nav -->
+    <nav class="fixed w-full z-50 top-6 px-4 pointer-events-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Pill Left -->
+            <div class="glass-pill pointer-events-auto px-6 py-2 rounded-full flex items-center gap-8 shadow-sm" data-aos="fade-down" data-aos-duration="1000">
+                <a href="#" class="flex items-center"><img src="logo.png" alt="360 Energia Solar" class="h-10 object-contain"></a>
+                <div class="hidden md:flex gap-6 text-sm font-bold text-gray-800">
+                    <a href="#sobre" class="hover:text-accent transition">Sobre</a>
+                    <a href="#servicos" class="hover:text-accent transition">Soluções</a>
+                    <a href="#depoimentos" class="hover:text-accent transition">Avaliações</a>
+                    <a href="#contato" class="hover:text-accent transition">Contato</a>
+                </div>
+            </div>
+            <!-- Pill Right -->
+            <a href="https://wa.me/5541987213374" target="_blank" class="pointer-events-auto bg-dark text-white px-7 py-3.5 rounded-full text-sm font-bold hover:bg-accent hover:text-dark transition shadow-lg" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                Orçamento Rápido
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="p-3 md:p-5 h-[96vh]">
+        <div class="hero-img w-full h-full rounded-[2rem] relative overflow-hidden flex flex-col justify-between p-8 md:p-16 shadow-2xl" data-aos="zoom-out" data-aos-duration="1500">
+            <!-- Dark overlay gradient -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/70"></div>
+            
+            <div class="relative z-10 flex-1 flex flex-col justify-end items-center text-center pb-8 md:pb-12">
+                <h1 class="text-huge font-extrabold text-white tracking-tighter mix-blend-overlay opacity-95" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                    Nova Energia
+                </h1>
+                <a href="#sobre" class="mt-8 glass-pill text-white bg-black/20 border-white/20 px-6 py-3 rounded-full text-sm font-bold flex items-center gap-3 hover:bg-white hover:text-dark transition duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    Nossa Missão <i class="fas fa-arrow-down text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="py-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+        <div class="flex flex-col gap-12">
+            <div class="w-full" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-dark leading-tight mb-12 tracking-tight max-w-5xl">
+                    A 360 Energia Solar existe para tornar a energia limpa acessível, eficiente e segura. Porque a sustentabilidade só funciona se o seu sistema render o máximo.
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20">
+                    <div class="rounded-[2rem] overflow-hidden aspect-square md:aspect-[4/3] relative group shadow-lg" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000 ease-in-out">
+                    </div>
+                    <div class="flex flex-col justify-center p-10 bg-white rounded-[2rem] shadow-sm border border-gray-100" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500" data-aos-easing="ease-out-cubic">
+                        <i class="fas fa-quote-left text-4xl text-gray-200 mb-6"></i>
+                        <p class="text-2xl font-medium text-gray-800 mb-8 leading-relaxed">"Acreditamos que a energia solar não é apenas tecnologia, é um movimento para um futuro melhor e mais econômico para todos."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="logo.png" alt="360 Logo" class="h-10 object-contain">
+                            <div>
+                                <p class="text-sm font-bold text-dark">Especialistas</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-wider">Curitiba & Região</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Bento Box Section -->
+    <section id="servicos" class="py-32 bg-dark text-white rounded-[3rem] mx-4 md:mx-6 mb-32 px-6 sm:px-12 lg:px-20 overflow-hidden shadow-2xl">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-20">
+            <div class="lg:w-1/4" data-aos="fade-right">
+                <span class="text-accent font-bold text-sm tracking-widest">01 /</span>
+            </div>
+            <div class="lg:w-3/4" data-aos="fade-left">
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight">
+                    Soluções completas para o seu sistema fotovoltaico render muito mais.
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Limpeza (Main highlight) -->
+            <div class="col-span-1 md:col-span-2 bg-cardDark rounded-[2rem] p-10 md:p-14 relative overflow-hidden group" data-aos="fade-up">
+                <div class="relative z-10 w-full md:w-2/3">
+                    <div class="w-14 h-14 bg-white/5 backdrop-blur-sm rounded-full flex items-center justify-center mb-8 text-accent border border-white/10">
+                        <i class="fas fa-broom text-xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-medium mb-6">Limpeza Profissional</h3>
+                    <p class="text-gray-400 mb-10 leading-relaxed text-lg">
+                        A sujeira reduz a geração de energia em até 25%. Utilizamos escovas rotativas de alta tecnologia para uma limpeza profunda e sem riscos às suas placas.
+                    </p>
+                    <a href="https://wa.me/5541987213374" class="inline-flex items-center gap-3 bg-white text-dark px-8 py-4 rounded-full text-sm font-bold hover:bg-accent transition">
+                        Agendar Limpeza <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Background Decoration -->
+                <div class="absolute right-0 top-0 w-1/2 h-full opacity-20 group-hover:opacity-40 transition duration-1000 ease-in-out">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover object-right">
+                </div>
+            </div>
+
+            <!-- Manutenção -->
+            <div class="col-span-1 bg-cardDark rounded-[2rem] p-10 flex flex-col justify-between group hover:bg-[#222] transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="w-14 h-14 bg-white/5 backdrop-blur-sm rounded-full flex items-center justify-center mb-8 text-white border border-white/10 group-hover:bg-accent group-hover:text-dark transition">
+                        <i class="fas fa-tools text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-medium mb-4">Manutenção</h3>
+                    <p class="text-gray-400 text-base leading-relaxed">Prevenção e correção de falhas em inversores e estruturas.</p>
+                </div>
+                <div class="mt-12 text-right">
+                    <i class="fas fa-arrow-right text-white/20 text-3xl group-hover:text-accent group-hover:-rotate-45 transition duration-300"></i>
+                </div>
+            </div>
+
+            <!-- Detecção -->
+            <div class="col-span-1 bg-white text-dark rounded-[2rem] p-10 flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <h3 class="text-6xl font-extrabold mb-2 tracking-tighter">100%</h3>
+                    <p class="text-sm font-bold text-gray-800 mb-6 uppercase tracking-widest border-b border-gray-200 pb-4">Eficiência</p>
+                    <p class="text-gray-600 text-lg leading-relaxed">Detecção avançada de falhas para garantir que seu sistema não perca geração.</p>
+                </div>
+                <a href="https://wa.me/5541987213374" class="w-14 h-14 bg-dark text-white rounded-full flex items-center justify-center hover:bg-accent hover:text-dark transition mt-8 shadow-lg">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Instalação -->
+            <div class="col-span-1 md:col-span-2 bg-accent rounded-[2rem] p-10 md:p-14 text-dark flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden relative" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative z-10 w-full md:w-2/3">
+                    <h3 class="text-4xl font-medium mb-4">Instalação Solar</h3>
+                    <p class="text-dark/80 font-medium text-lg mb-8">Projetos residenciais e comerciais personalizados com a melhor tecnologia do mercado e instalação impecável.</p>
+                    <a href="https://wa.me/5541987213374" class="inline-flex items-center font-bold text-dark hover:text-white transition border-b-2 border-dark hover:border-white pb-1">
+                        Solicitar Projeto
+                    </a>
+                </div>
+                <div class="relative z-10 shrink-0 right-0 md:-right-10 opacity-10">
+                    <i class="fas fa-solar-panel text-[12rem]"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section id="depoimentos" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-16">
+            <div class="lg:w-1/4" data-aos="fade-right">
+                <span class="text-accent font-bold text-sm tracking-widest">02 /</span>
+            </div>
+            <div class="lg:w-3/4" data-aos="fade-left">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-sm font-bold text-gray-800 uppercase tracking-widest">Avaliações do Google</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight">
+                    O que dizem nossos clientes.
+                </h2>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Review 1 -->
+            <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm hover:shadow-lg transition duration-500" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-lg">M</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Marcelo Silva</h4>
+                        <p class="text-xs text-gray-500">Local Guide</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed text-sm">"Excelente atendimento! Fizeram a limpeza das minhas placas que estavam muito sujas e a geração subiu quase 30% no mesmo dia. Recomendo demais a equipe da 360 Energia Solar."</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-dark text-white rounded-[2rem] p-10 shadow-lg relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-google absolute -right-4 -bottom-4 text-[8rem] text-white/5 group-hover:scale-110 transition duration-700"></i>
+                <div class="flex items-center gap-4 mb-6 relative z-10">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center font-bold text-lg">A</div>
+                    <div>
+                        <h4 class="font-bold">Ana Paula</h4>
+                        <p class="text-xs text-gray-400">1 avaliação</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 leading-relaxed text-sm relative z-10">"Trabalho impecável na detecção de falha do meu inversor. Resolveram rápido um problema que outra empresa não conseguiu. Muito profissionais e justos no valor."</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm hover:shadow-lg transition duration-500" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold text-lg">R</div>
+                    <div>
+                        <h4 class="font-bold text-dark">Roberto Mendes</h4>
+                        <p class="text-xs text-gray-500">3 avaliações</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed text-sm">"Equipe nota 1000! Instalação super limpa, explicaram tudo certinho sobre o aplicativo e o sistema. Já estou no segundo mês com a conta vindo só a taxa mínima."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-24">
+            <div class="lg:w-1/4" data-aos="fade-right">
+                <span class="text-accent font-bold text-sm tracking-widest">04 /</span>
+            </div>
+            <div class="lg:w-3/4 flex flex-col md:flex-row gap-16" data-aos="fade-left">
+                <div class="flex-1">
+                    <h2 class="text-4xl md:text-5xl font-medium leading-tight tracking-tight mb-8">
+                        Pronto para otimizar sua energia?
+                    </h2>
+                    <p class="text-gray-500 mb-12 text-lg">Atendemos em Portão, Curitiba e região metropolitana.</p>
+                    
+                    <div class="space-y-8">
+                        <a href="https://wa.me/5541987213374" target="_blank" class="flex items-center gap-6 group">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-200 group-hover:border-green-500 group-hover:bg-green-500 group-hover:text-white transition shadow-sm">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-1">WhatsApp</p>
+                                <span class="text-2xl font-medium text-dark group-hover:text-green-600 transition">(41) 98721-3374</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://instagram.com/360energiasolar" target="_blank" class="flex items-center gap-6 group">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center border border-gray-200 group-hover:border-pink-500 group-hover:bg-gradient-to-tr group-hover:from-yellow-400 group-hover:via-pink-500 group-hover:to-purple-600 group-hover:text-white transition shadow-sm">
+                                <i class="fab fa-instagram text-2xl text-dark group-hover:text-white"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 font-bold uppercase tracking-wider mb-1">Instagram</p>
+                                <span class="text-2xl font-medium text-dark group-hover:text-pink-600 transition">@360energiasolar</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="flex-1 rounded-[2rem] overflow-hidden min-h-[400px] shadow-2xl border border-gray-100 relative p-2 bg-white" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="absolute inset-2 rounded-[1.5rem] overflow-hidden">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=-25.4661856,-49.2932929&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="border-t border-gray-200 py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <a href="#" class="flex items-center"><img src="logo.png" alt="360 Energia Solar" class="h-14 object-contain"></a>
+        <p class="text-sm text-gray-500 font-medium text-center md:text-left flex items-center justify-center gap-2">
+            &copy; <script>document.write(new Date().getFullYear())</script> <i class="fas fa-arrow-right text-xs"></i> 360 Energia Solar.<br class="md:hidden"> Todos os direitos reservados.
+        </p>
+        <div class="flex gap-6">
+            <a href="https://wa.me/5541987213374" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-dark hover:text-white hover:border-dark transition"><i class="fab fa-whatsapp text-xl"></i></a>
+            <a href="https://instagram.com/360energiasolar" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-dark hover:text-white hover:border-dark transition"><i class="fab fa-instagram text-xl"></i></a>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+</html>
